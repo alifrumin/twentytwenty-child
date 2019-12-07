@@ -15,8 +15,12 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<?php
 
+	<?php
+  $thumbnail = get_field('book_cover');
+  <?php if( $thumbnail ): ?>
+    <img class="thumbnail" src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>" />
+  <?php endif; 
   $entry_header_classes = '';
 
   if ( is_singular() ) {
@@ -57,7 +61,13 @@
   		} else {
   			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
   		}
-
+      ?>
+      <h2>
+        <?php the_field('book_author');?>
+      </h2>
+      <h3>
+      </h3>
+      <?php
   		$intro_text_width = '';
 
   		if ( is_singular() ) {
@@ -89,8 +99,6 @@
 		<div class="entry-content">
       <?php the_field('background_color'); ?>
       <?php the_field('text_color'); ?>
-      <?php the_field('book_author'); ?>
-      <?php the_field('book_cover'); ?>
       <?php the_field('date'); ?>
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
