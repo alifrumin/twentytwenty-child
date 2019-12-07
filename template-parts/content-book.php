@@ -37,7 +37,7 @@
   		if ( is_singular() ) {
   			the_title( '<h1 class="entry-title">', '</h1>' );
   		} else {
-  			the_title( '<h3 class="entry-title"><a style=' . the_field('text_color') . ' href="' . esc_url( get_permalink() ) . '">', '</a></h3>' );
+        ?> <h3><a style="color: <?php the_field('text_color'); ?>;"href="<?php esc_url( get_permalink()); ?>">the_title();</a></h3>
   		}
       ?>
       <h3 style="font-style:italics;">
