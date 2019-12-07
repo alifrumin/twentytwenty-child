@@ -87,7 +87,11 @@
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content">
-
+      <?php the_field('background_color'); ?>
+      <?php the_field('text_color'); ?>
+      <?php the_field('book_author'); ?>
+      <?php the_field('book_cover'); ?>
+      <?php the_field('date'); ?>
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
