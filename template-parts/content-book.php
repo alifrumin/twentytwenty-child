@@ -18,7 +18,7 @@
 	<?php
   $thumbnail = get_field('book_cover');
   ?>
-    <img class="thumbnail" src="<?php echo $thumbnail['url']; ?>" />
+    <div class="bookcover"><img class="thumbnail" src="<?php echo $thumbnail['url']; ?>" /></div><div class='bookdetails'>
   <?php
   $entry_header_classes = '';
 
@@ -130,7 +130,7 @@
 		?>
 
 	</div><!-- .section-inner -->
-
+</div><!-- .bookdetails -->
 	<?php
 
 	if ( is_single() ) {
