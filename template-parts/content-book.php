@@ -18,9 +18,9 @@
 
 	<?php
   $thumbnail = get_field('book_cover');
-  <?php if( $thumbnail ): ?>
-    <img class="thumbnail" src="<?php echo $thumbnail['url']; ?>" alt="<?php echo $thumbnail['alt']; ?>" />
-  <?php endif; 
+  ?>
+    <img class="thumbnail" src="<?php echo $thumbnail['url']; ?>" />
+  <?php
   $entry_header_classes = '';
 
   if ( is_singular() ) {
