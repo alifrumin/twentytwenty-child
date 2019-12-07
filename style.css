@@ -23,7 +23,7 @@ body.category-book article {
 }
 
 .bookcover {
-  width: 250px;
+  width: 200px;
 }
 .bookdetails {
   padding-left: 30px;
@@ -38,9 +38,8 @@ body.category-book article {
   justify-content: left;
 }
 
-ul.post-meta li.post-edit {
+ul.post-meta {
   margin-left: 0px;
-  padding-left: 0px;
 }
 
 .entry-categories {

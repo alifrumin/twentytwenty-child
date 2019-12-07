@@ -38,7 +38,7 @@
   			the_title( '<h1 class="entry-title">', '</h1>' );
   		} else {
         ?>
-          <h3><a style="color: <?php the_field('text_color'); ?> ;" href="<?php get_permalink(); ?> "> <?php the_title(); ?></a></h3>
+          <h3><a style="color: <?php the_field('text_color'); ?> ;" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
         <?php
   		}
       ?>
