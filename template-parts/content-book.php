@@ -13,8 +13,7 @@
 
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
+<article <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="background-color: <?php the_field('background_color'); ?>; color: <?php the_field('text_color'); ?>;">
 
 	<?php
   $thumbnail = get_field('book_cover');
@@ -66,6 +65,7 @@
         <?php the_field('book_author');?>
       </h2>
       <h3>
+        <?php the_field('date'); ?>
       </h3>
       <?php
   		$intro_text_width = '';
@@ -97,9 +97,6 @@
 	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
 
 		<div class="entry-content">
-      <?php the_field('background_color'); ?>
-      <?php the_field('text_color'); ?>
-      <?php the_field('date'); ?>
 			<?php
 			if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 				the_excerpt();
