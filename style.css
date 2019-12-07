@@ -24,3 +24,12 @@ body.category-book article {
 .bookdetails {
   padding-left: 30px;
 }
+
+.bookdetails h3,
+.bookdetails h4 {
+  margin: 0px;
+}
+
+.bookdetails .entry-categories-inner {
+  justify-content: left;
+}

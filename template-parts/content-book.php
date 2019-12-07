@@ -42,7 +42,7 @@
         <?php
   		}
       ?>
-      <h3 style="font-style:italics;">
+      <h3 style="font-style:italic;">
         <?php the_field('book_author');?>
       </h3>
       <h4>
@@ -93,7 +93,7 @@
 
   </header><!-- .entry-header -->
 
-	<div class="post-inner <?php echo is_page_template( 'templates/template-full-width.php' ) ? '' : 'thin'; ?> ">
+	<div>
 
 		<div class="entry-content">
 			<?php
@@ -102,7 +102,9 @@
 			} else {
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
 			}
-			?>
+
+      edit_post_link();
+      ?>
 
 		</div><!-- .entry-content -->
 
@@ -118,8 +120,6 @@
 				'link_after'  => '</span>',
 			)
 		);
-
-		edit_post_link();
 
 		// Single bottom post meta.
 		twentytwenty_the_post_meta( get_the_ID(), 'single-bottom' );
