@@ -38,7 +38,7 @@ body.category-book article {
   justify-content: left;
 }
 
-ul.post-meta {
+ul.post-meta li.post-edit {
   margin-left: 0px;
 }
 
