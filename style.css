@@ -33,3 +33,18 @@ body.category-book article {
 .bookdetails .entry-categories-inner {
   justify-content: left;
 }
+
+li.post-edi {
+  margin-left: 0px;
+}
+
+.entry-categories {
+  padding-top: 20px;
+}
+.entry-categories-inner a {
+
+}
+
+.entry-categories-inner a:hover {
+
+}
