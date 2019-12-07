@@ -38,8 +38,9 @@ body.category-book article {
   justify-content: left;
 }
 
-li.post-edit {
+ul.post-meta li.post-edit {
   margin-left: 0px;
+  padding-left: 0px;
 }
 
 .entry-categories {
