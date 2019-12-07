@@ -37,15 +37,15 @@
   		if ( is_singular() ) {
   			the_title( '<h1 class="entry-title">', '</h1>' );
   		} else {
-  			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+  			the_title( '<h3 class="entry-title"><a style=' . the_field('text_color') . ' href="' . esc_url( get_permalink() ) . '">', '</a></h3>' );
   		}
       ?>
-      <h2>
+      <h3 style="font-style:italics;">
         <?php the_field('book_author');?>
-      </h2>
-      <h3>
-        <?php the_field('date'); ?>
       </h3>
+      <h4>
+        <?php the_field('date'); ?>
+      </h4>
       <?php
         /**
          * Allow child themes and plugins to filter the display of the categories in the entry header.

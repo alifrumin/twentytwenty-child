@@ -11,3 +11,16 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twentyfifteenchild
 */
+body.category-book article {
+  padding: 30px;
+}
+
+.bookdetails,
+.bookcover {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bookdetails {
+
+}
