@@ -11,3 +11,23 @@ function my_theme_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 }
+
+
+// Our custom post type function
+function create_posttype() {
+
+    register_post_type( 'books',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Books' ),
+                'singular_name' => __( 'Books' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'books'),
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
