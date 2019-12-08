@@ -76,6 +76,10 @@ ul.post-meta li.post-edit {
   margin: 0 auto;
 }
 
+article.category-book {
+  padding-bottom: 10px;
+}
+
 .entry-categories {
   padding-top: 20px;
 }
