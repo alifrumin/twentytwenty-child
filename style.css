@@ -30,6 +30,16 @@ body.category-book article {
   width: 80%;
 }
 
+div.post-meta-wrapper.post-meta-edit-link-wrapper {
+  float: right;
+  width: 70px;
+  text-align: right;
+}
+
+div.watch-action {
+  color: black;
+}
+
 .bookdetails h3,
 .bookdetails h4 {
   margin: 0px;
