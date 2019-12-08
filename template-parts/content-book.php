@@ -15,7 +15,7 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="background-color: <?php the_field('background_color'); ?>; color: <?php the_field('text_color'); ?>;">
 <style>
-.singluar hr.styled-separator,
+.single hr.styled-separator,
 .comment-respond
 .comment-notes a,
 .comment-respond
