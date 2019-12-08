@@ -11,6 +11,11 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twentyfifteenchild
 */
+
+.comment-respond label {
+  display: none;  
+}
+
 body:not(.singular) main > article:first-of-type,
 body.category-book article {
   padding: 30px;

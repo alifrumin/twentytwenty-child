@@ -19,6 +19,7 @@
 .comment-respond
 .comment-notes a,
 .comment-respond
+.single a
 .logged-in-as a,
 div.watch-action .status,
 div.watch-action .unlbg-style1 .unlc,
