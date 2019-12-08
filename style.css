@@ -27,6 +27,7 @@ body.category-book article {
 }
 .bookdetails {
   padding-left: 30px;
+  width: 80%;
 }
 
 .bookdetails h3,
