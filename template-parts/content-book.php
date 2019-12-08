@@ -14,6 +14,13 @@
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="background-color: <?php the_field('background_color'); ?>; color: <?php the_field('text_color'); ?>;">
+<style>
+
+.bookdetails .entry-categories-inner a {
+  color: <?php the_field('accent_color'); ?>;
+}
+
+</style>
 
 	<?php
   $thumbnail = get_field('book_cover');
