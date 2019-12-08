@@ -31,3 +31,10 @@ function create_posttype() {
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
+
+add_filter('the_category','add_class_to_category',10,3);
+
+function add_class_to_category( $thelist, $separator, $parents){
+    $class_to_add = 'my-category-class';
+    return str_replace('<a href="', '<a class="' . $class_to_add . '" href="', $thelist);
+}
