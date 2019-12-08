@@ -75,12 +75,8 @@ ul.post-meta li.post-edit {
 .entry-categories {
   padding-top: 20px;
 }
-.entry-categories-inner a {
-
-}
-
-.entry-categories-inner a:hover {
-
+.bookdetails .entry-categories-inner a {
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {
