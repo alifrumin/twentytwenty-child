@@ -15,6 +15,9 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="background-color: <?php the_field('background_color'); ?>; color: <?php the_field('text_color'); ?>;">
 <style>
+div.watch-action .status,
+div.watch-action .unlbg-style1 .unlc,
+div.watch-action .lbg-style1 .lc, 
 .singular:not(.overlay-header) .bookdetails .entry-header .entry-categories-inner a {
   color: <?php the_field('accent_color'); ?>;
 }
