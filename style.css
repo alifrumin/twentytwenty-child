@@ -68,6 +68,10 @@ ul.post-meta li.post-edit {
   margin-left: 0px;
 }
 
+.bookcover img {
+  margin: 0 auto;
+}
+
 .entry-categories {
   padding-top: 20px;
 }
