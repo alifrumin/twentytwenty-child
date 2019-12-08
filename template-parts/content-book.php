@@ -44,7 +44,7 @@
   		}
       ?>
       <h3 style="font-style:italic;">
-        <?php the_field('book_author');?>
+        By: <?php the_field('book_author');?>
       </h3>
       <h4>
         <?php the_field('date'); ?>
@@ -65,6 +65,7 @@
         <div class="entry-categories">
           <span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
           <div class="entry-categories-inner">
+            Categories:
             <?php the_category( ' ' ); ?>
           </div><!-- .entry-categories-inner -->
         </div><!-- .entry-categories -->

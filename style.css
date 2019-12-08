@@ -79,6 +79,13 @@ ul.post-meta li.post-edit {
   color: black;
 }
 
+.singular .bookcover {
+ margin-top: 8em;  
+}
+
+.singular .bookdetails .header-footer-group {
+  color: inherit;
+}
 .singular .bookdetails .entry-header {
   background-color: inherit;
 }
