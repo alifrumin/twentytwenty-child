@@ -85,4 +85,10 @@ ul.post-meta li.post-edit {
     padding-left: 30px;
     width: 60%;
   }
+  .align-right {
+    float: left;
+  }
+  div.post-meta-wrapper.post-meta-edit-link-wrapper {
+    float: left;
+  }
 }
