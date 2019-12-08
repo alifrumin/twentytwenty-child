@@ -98,7 +98,9 @@ ul.post-meta li.post-edit {
   margin-top: 0px;
 }
 
-hr.
+body.single-post {
+  background-color: white;
+}
 
 @media only screen and (max-width: 700px) {
 
