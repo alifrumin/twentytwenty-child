@@ -16,10 +16,13 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="background-color: <?php the_field('background_color'); ?>; color: <?php the_field('text_color'); ?>;">
 <style>
 .single hr.styled-separator,
-.comment-respond
+.single .comment-respond .comment-notes a,
+.single .comment-respond .logged-in-as a,
+.comment-respond,
+.single input[type="submit"],
 .comment-notes a,
 .comment-respond
-.single a
+.single .pagination-single-inner a
 .logged-in-as a,
 div.watch-action .status,
 div.watch-action .unlbg-style1 .unlc,
