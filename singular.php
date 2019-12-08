@@ -52,7 +52,7 @@ get_header();
 		$archive_subtitle = get_the_archive_description();
 	}
 
-	if ( $archive_title || $archive_subtitle ) {
+	if ( $archive_title || $archive_subtitle && !is_singular()) {
 		?>
 
 		<header class="archive-header has-text-align-center header-footer-group">
