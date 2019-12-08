@@ -43,6 +43,14 @@ div.watch-action .status,
 div.watch-action .unlbg-style1 .unlc,
 div.watch-action .lbg-style1 .lc {
   color: black;
+  font-weight: bold;
+}
+
+div.watch-action .status {
+  display: block;
+  clear: both;
+  margin: 0px;
+  padding: 0px;
 }
 
 .bookdetails h3,
