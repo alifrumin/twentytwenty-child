@@ -36,7 +36,7 @@ div.post-meta-wrapper.post-meta-edit-link-wrapper {
   text-align: right;
 }
 article.category-book div.entry-content div.watch-action {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 div.watch-action .status,
