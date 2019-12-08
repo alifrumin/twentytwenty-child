@@ -65,7 +65,6 @@
         <div class="entry-categories">
           <span class="screen-reader-text"><?php _e( 'Categories', 'twentytwenty' ); ?></span>
           <div class="entry-categories-inner">
-            Categories:
             <?php the_category( ' ' ); ?>
           </div><!-- .entry-categories-inner -->
         </div><!-- .entry-categories -->

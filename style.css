@@ -55,6 +55,10 @@ div.watch-action .status {
   padding: 0px;
 }
 
+.bookdetails h1 {
+  margin-bottom: 0px;
+}
+
 .bookdetails h3,
 .bookdetails h4 {
   margin: 0px;
@@ -80,7 +84,7 @@ ul.post-meta li.post-edit {
 }
 
 .singular .bookcover {
- margin-top: 8em;  
+ margin-top: 8em;
 }
 
 .singular .bookdetails .header-footer-group {
@@ -91,6 +95,12 @@ ul.post-meta li.post-edit {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .singular .bookcover {
+    margin-top: 4em;
+    margin-left: 2em;
+  }
+
   .align-right {
     float: left;
   }
