@@ -76,3 +76,13 @@ ul.post-meta li.post-edit {
 .entry-categories-inner a:hover {
 
 }
+
+@media only screen and (max-width: 600px) {
+  .bookcover {
+    width: 30%;
+  }
+  .bookdetails {
+    padding-left: 30px;
+    width: 60%;
+  }
+}
