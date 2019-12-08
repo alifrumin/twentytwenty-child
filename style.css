@@ -32,8 +32,10 @@ body.category-book article {
 
 div.post-meta-wrapper.post-meta-edit-link-wrapper {
   float: right;
-  width: 70px;
+  width: 80px;
   text-align: right;
+  padding-left: 20px;
+
 }
 article.category-book div.entry-content div.watch-action {
   max-width: 100% !important;
