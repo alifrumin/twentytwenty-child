@@ -79,6 +79,9 @@ ul.post-meta li.post-edit {
   color: black;
 }
 
+.singular .bookdetails .entry-header {
+  background-color: inerhit;
+}
 @media only screen and (max-width: 600px) {
   .align-right {
     float: left;
