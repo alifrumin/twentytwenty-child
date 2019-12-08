@@ -80,8 +80,9 @@ ul.post-meta li.post-edit {
 }
 
 .singular .bookdetails .entry-header {
-  background-color: inerhit;
+  background-color: inherit;
 }
+
 @media only screen and (max-width: 600px) {
   .align-right {
     float: left;

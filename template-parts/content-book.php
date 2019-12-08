@@ -34,8 +34,9 @@
 
       <?php
 
-  		if ( is_singular() ) {
+  		if ( is_singular() ) { ?>
         <h1 style="color: <?php the_field('text_color'); ?> ;"> <?php the_title(); ?></h3>
+          <?php
   		} else {
         ?>
           <h3><a style="color: <?php the_field('text_color'); ?> ;" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
