@@ -15,25 +15,28 @@
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>" style="background-color: <?php the_field('background_color'); ?>; color: <?php the_field('text_color'); ?>;">
 <style>
-.single hr.styled-separator,
-.single .comment-respond .comment-notes a,
-.single .comment-respond .logged-in-as a,
-.comment-respond,
-.comment-notes a,
-.comment-respond,
-.single .pagination-single-inner a, 
-.logged-in-as a,
-div.watch-action .status,
-div.watch-action .unlbg-style1 .unlc,
-div.watch-action .lbg-style1 .lc,
-.singular:not(.overlay-header) .bookdetails .entry-header .entry-categories-inner a {
-  color: <?php the_field('accent_color'); ?>;
-}
 
-.single input[type="submit"] {
-  background-color: <?php the_field('accent_color'); ?>;
-}
+  .singular:not(.overlay-header) .bookdetails .entry-header .entry-categories-inner a {
+    color: <?php the_field('accent_color'); ?>;
+  }
 
+  .single hr.styled-separator,
+  .single .comment-respond .comment-notes a,
+  .single .comment-respond .logged-in-as a,
+  .comment-respond,
+  .comment-notes a,
+  .comment-respond,
+  .single .pagination-single-inner a,
+  .logged-in-as a,
+  div.watch-action .status,
+  div.watch-action .unlbg-style1 .unlc,
+  div.watch-action .lbg-style1 .lc {
+    color: <?php the_field('text_color'); ?>;
+  }
+
+  .single input[type="submit"] {
+    background-color: <?php the_field('accent_color'); ?>;
+  }
 
 </style>
 
