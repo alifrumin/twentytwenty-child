@@ -65,7 +65,7 @@
           <?php
   		} else {
         ?>
-          <h3><a style="color: <?php the_field('text_color'); ?> ;" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h3>
+          <h1><a style="color: <?php the_field('text_color'); ?> ;" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h1>
         <?php
   		}
       ?>
