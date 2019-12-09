@@ -18,6 +18,7 @@
 
   .post-<?php the_ID(); ?> .entry-categories-inner a,
   .post-<?php the_ID(); ?> a.goodreadsLink:hover,
+  .singular:not(.overlay-header) .post-<?php the_ID(); ?> .entry-header a:hover,
   .singular:not(.overlay-header) .bookdetails .entry-header .entry-categories-inner a {
     color: <?php the_field('accent_color'); ?>;
   }
