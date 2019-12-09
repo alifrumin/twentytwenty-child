@@ -12,8 +12,11 @@
  Text Domain:  twentyfifteenchild
 */
 
+a.goodreadsLink {
+  font-size: 30px;
+}
 .comment-respond label {
-  display: none;  
+  display: none;
 }
 
 body:not(.singular) main > article:first-of-type,

@@ -17,7 +17,7 @@
 <style>
 
   .post-<?php the_ID(); ?> .entry-categories-inner a,
-  .post-<?php the_ID(); ?> a.goodreadsLink,
+  .post-<?php the_ID(); ?> a.goodreadsLink:hover,
   .singular:not(.overlay-header) .bookdetails .entry-header .entry-categories-inner a {
     color: <?php the_field('accent_color'); ?>;
   }
@@ -30,7 +30,7 @@
   .comment-notes a,
   .comment-respond,
   .logged-in-as a,
-  .post-<?php the_ID(); ?> a.goodreadsLink:hover,
+  .post-<?php the_ID(); ?> a.goodreadsLink,
   .post-<?php the_ID(); ?> div.watch-action .status,
   .post-<?php the_ID(); ?> div.watch-action .unlbg-style1 .unlc,
   .post-<?php the_ID(); ?> div.watch-action .lbg-style1 .lc {
@@ -99,6 +99,10 @@
 
         <?php
       }
+      if (get_field('good_reads_link')) { ?>
+        <a class="goodreadsLink" href="<?php the_field('good_reads_link'); ?>"><i class="fab fa-goodreads"></i></a>
+        <?php
+      }
   		$intro_text_width = '';
 
   		if ( is_singular() ) {
@@ -130,10 +134,7 @@
 			} else {
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
 			}
-      if (get_field('good_reads_link')) { ?>
-        <a class="goodreadsLink" href="<?php the_field('good_reads_link'); ?>"><i class="fab fa-goodreads"></i></a>
-        <?php
-      }
+
       edit_post_link();
       ?>
 
