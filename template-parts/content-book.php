@@ -30,7 +30,7 @@
   .comment-notes a,
   .comment-respond,
   .logged-in-as a,
-  .singular:not(.overlay-header) .post-<?php the_ID(); ?> .entry-header a
+  .singular:not(.overlay-header) .post-<?php the_ID(); ?> .entry-header a,
   .post-<?php the_ID(); ?> a.goodreadsLink,
   .post-<?php the_ID(); ?> div.watch-action .status,
   .post-<?php the_ID(); ?> div.watch-action .unlbg-style1 .unlc,
