@@ -106,8 +106,9 @@
   		}
 
   		if ( has_excerpt() && is_singular() ) {
-  			?>
-        <a href="<?php the_field('goodreads_link'); ?>"><i class="fab fa-goodreads"></i></a>
+        if (the_field('goodreads_link')) { ?>
+          <a href="<?php the_field('goodreads_link'); ?>"><i class="fab fa-goodreads"></i></a>
+        }
   			<div class="intro-text section-inner max-percentage<?php echo $intro_text_width; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static output ?>">
   				<?php the_excerpt(); ?>
   			</div>
