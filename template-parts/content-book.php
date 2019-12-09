@@ -128,7 +128,7 @@
 			} else {
 				the_content( __( 'Continue reading', 'twentytwenty' ) );
 			}
-      if (the_field('good_reads_link')) { ?>
+      if (get_field('good_reads_link')) { ?>
         <a href="<?php the_field('good_reads_link'); ?>"><i class="fab fa-goodreads"></i></a>
         <?php
       }
