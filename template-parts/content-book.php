@@ -105,6 +105,10 @@
         <a class="goodreadsLink" href="<?php the_field('good_reads_link'); ?>"><i class="fab fa-goodreads"></i></a>
         <?php
       }
+      if (get_field('gcal')) { ?>
+        <a class="goodreadsLink" href="<?php the_field('gcal'); ?>"><i class="fa fa-plus-square"></i></a>
+        <?php
+      }
   		$intro_text_width = '';
 
   		if ( is_singular() ) {
