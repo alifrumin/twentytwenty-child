@@ -16,6 +16,10 @@
   background: white;
 }
 
+.archive.category main nav.pagination {
+  margin: 10px;
+}
+
 .archive.category main hr {
   display: none;
 }
