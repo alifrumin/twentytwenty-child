@@ -101,7 +101,7 @@ article.category-book {
 }
 
 .singular .bookcover {
- margin-top: 4em;
+ margin-top: 8em;
  margin-left: 2em;
 }
 
@@ -126,7 +126,7 @@ body.single-post {
     margin-top: 0px;
   }
   .singular .bookcover {
-     margin-top: 8em;
+     margin-top: 4em;
   }
 
   .align-right {
