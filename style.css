@@ -12,6 +12,14 @@
  Text Domain:  twentyfifteenchild
 */
 
+.archive.category main {
+  background: white;
+}
+
+.archive.category main hr {
+  display: none;
+}
+
 a.goodreadsLink {
   font-size: 30px;
 }
@@ -93,6 +101,7 @@ article.category-book {
 
 .singular .bookcover {
  margin-top: 8em;
+ margin-left: 2em;
 }
 
 .singular .bookdetails .header-footer-group {
@@ -114,11 +123,6 @@ body.single-post {
 
   .footer-top-visible .footer-nav-widgets-wrapper {
     margin-top: 0px;
-  }
-
-  .singular .bookcover {
-    margin-top: 4em;
-    margin-left: 2em;
   }
 
   .align-right {
