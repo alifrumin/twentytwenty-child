@@ -12,26 +12,6 @@ function my_theme_enqueue_styles() {
     );
 }
 
-
-// Our custom post type function
-function create_posttype() {
-
-    register_post_type( 'books',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Books' ),
-                'singular_name' => __( 'Books' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'books'),
-        )
-    );
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
-
 function my_pre_get_posts( $query ) {
 
 	// do not modify queries in the admin
@@ -40,9 +20,7 @@ function my_pre_get_posts( $query ) {
 		return $query;
 
 	}
-
-	// only modify queries for 'event' post type
-
+if (!empty($query->query['cat'])) {
 	$query->set('orderby', 'meta_value');
 	$query->set('meta_key', 'date');
 	$query->set('order', 'DESC');
@@ -51,7 +29,7 @@ function my_pre_get_posts( $query ) {
 
 	// return
 	return $query;
-
+  }
 }
 
 add_action('pre_get_posts', 'my_pre_get_posts');
