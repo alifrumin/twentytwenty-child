@@ -32,9 +32,26 @@ function create_posttype() {
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
 
-add_filter('the_category','add_class_to_category',10,3);
+function my_pre_get_posts( $query ) {
 
-function add_class_to_category( $thelist, $separator, $parents){
-    $class_to_add = 'my-category-class';
-    return str_replace('<a href="', '<a class="' . $class_to_add . '" href="', $thelist);
+	// do not modify queries in the admin
+	if( is_admin() ) {
+
+		return $query;
+
+	}
+
+	// only modify queries for 'event' post type
+
+	$query->set('orderby', 'meta_value');
+	$query->set('meta_key', 'date');
+	$query->set('order', 'DESC');
+
+
+
+	// return
+	return $query;
+
 }
+
+add_action('pre_get_posts', 'my_pre_get_posts');
